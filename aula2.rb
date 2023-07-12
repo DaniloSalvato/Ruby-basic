@@ -112,7 +112,7 @@
 # minutos = time.min
 # segundos = time.sec
 
-# if horas < 12 && minutos == 0 && segundos == 0
+#if Time.now.hour < 12
 #     puts "Bom dia"
 # else 
 #     puts "Boa tarde"
@@ -260,11 +260,9 @@
 # end
 
 #ex24
-# Solicitar um número de 1 a 7
 # print "Digite um número de 1 a 7: "
 # numero = gets.chomp.to_i
 
-# # Exibir o dia da semana correspondente
 # dia_semana = case numero
 #   when 1
 #     "Domingo"
