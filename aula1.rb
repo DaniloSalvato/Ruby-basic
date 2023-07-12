@@ -55,16 +55,3 @@ puts "Convertendo float para string #{x.to_s.class}"
 x = '15'
 puts "Convertendo string para float #{x.to_f.class}"
 
-
-#teste
-
-x = 3.14 / 2
-puts x.class
-
-
-x = 1 + '1'
-y = 1 - '1'
-
-puts x 
-puts y
-
