@@ -226,7 +226,7 @@
 
 # if idade.class == Integer
   
-#     if idade < 18
+#     if idade > 0 && idade < 18
 #       grupo_etario = "jovem"
 #     elsif idade >= 18 && idade < 60
 #       grupo_etario = "adulto"
@@ -245,8 +245,7 @@
 # print "Digite a temperatura em graus Celsius: "
 # temperatura_celsius = gets.chomp.to_f
 
-# temperatura_fahrenheit = (temperatura_celsius * 9/5) + 32
-
+# temperatura_fahrenheit = (temperatura_celsius * 1.8) + 32
 # puts "A temperatura em Fahrenheit é: #{temperatura_fahrenheit}°F"
 
 #ex23
@@ -285,30 +284,30 @@
 # puts "O dia da semana correspondente é: #{dia_semana}"
 
 #ex25
-# print "Digite o preço normal do produto: "
-#     preco_etiqueta = gets.chomp.to_f
+print "Digite o preço normal do produto: "
+    preco_etiqueta = gets.chomp.to_f
     
-#     print "Digite o código da condição de pagamento (1, 2, 3 ou 4): "
-#     condicao_pagamento = gets.chomp.to_i
+    print "Digite o código da condição de pagamento (1, 2, 3 ou 4): "
+    condicao_pagamento = gets.chomp.to_i
     
-#     case condicao_pagamento
-#     when 1
-#       desconto = preco_etiqueta * 0.1
-#       valor_final = preco_etiqueta - desconto
-#     when 2
-#       desconto = preco_etiqueta * 0.15
-#       valor_final = preco_etiqueta - desconto
-#     when 3
-#       valor_final = preco_etiqueta
-#     when 4
-#       juros = preco_etiqueta * 0.1
-#       valor_final = preco_etiqueta + juros
-#     else
-#       puts "Condição de pagamento inválida."
-#       return
-#     end
+    case condicao_pagamento
+    when 1
+      desconto = preco_etiqueta * 0.1
+      valor_final = preco_etiqueta - desconto
+    when 2
+      desconto = preco_etiqueta * 0.15
+      valor_final = preco_etiqueta - desconto
+    when 3
+      valor_final = preco_etiqueta
+    when 4
+      juros = preco_etiqueta * 0.1
+      valor_final = preco_etiqueta + juros
+    else
+      puts "Condição de pagamento inválida."
+      return
+    end
     
-#     puts "Valor a ser pago: R$ %.2f" % valor_final
+    puts "Valor a ser pago: R$ #{valor_final.round(2)}"
     
 
 
