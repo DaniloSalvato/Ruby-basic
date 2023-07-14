@@ -21,7 +21,7 @@
 
 #ex4
 # i = 10
-# until i < 0
+# until i == 0
 #     puts i
 #     i -= 1  
 # end
@@ -38,7 +38,7 @@
 # new_array = array.map do |a| 
 #              a * 2
 #            end
-# puts "#{new_array}"
+# p new_array
 
 #ex7
 # range = 1..10
@@ -57,22 +57,24 @@
 # end
 
 #ex9
-# range = 1..10
-
-# for i in range
+# i = 1
+#while i <= 10
 #     puts i 
 #     redo if i == 7
+#     i += 1
 # end 
 
 #ex10
 # i = 0
 # until i > 5
 #     begin
-#      puts "Iteration #{i}"
-#      raise if i > 2
+#      puts i
+#      i += 1
+#      raise if i ==3
 #      i += 1
 #     rescue
 #      retry
+#      numero = 1
 #     end
 # end
 
@@ -82,14 +84,14 @@
 #  a * 2
 # end
 
-# puts " #{array}"
+# p array
 
 #ex12
 # range = 1..20
 
 # for i in range 
-#     puts i 
 #     break if i % 2 == 0
+#     puts i    
 # end 
 
 #ex13
@@ -126,13 +128,13 @@
 # end 
 
 #ex17
-# i = 1
+i = 1
 
-# until i > 20
-#     puts i 
-#     redo if i % 4 == 0
-#     i += 1
-# end 
+until i > 20
+    puts i 
+    redo if i % 4 == 0
+    i += 1
+end 
 
 #ex18 
 # range = 1..50
