@@ -214,25 +214,41 @@
 # triangulo(3)
 
 #ex19
-def choise(array)
-    number = rand(1..100)
+# def choise(array)
+#     number = rand(1..100)
 
-    array.each do |num|
-        if num == number
-            puts "#{number}Parabéns! Você acertou!"
-            break
-        elsif num > number
-            puts "O número #{num} é maior que o número correto...vamos tentar o próximo!"
-        else
-            puts "O número #{num} é menor que o número correto...vamos tentar o próximo!"
+#     array.each do |num|
+#         if num == number
+#             puts "#{number}Parabéns! Você acertou!"
+#             break
+#         elsif num > number
+#             puts "O número #{num} é maior que o número correto...vamos tentar o próximo!"
+#         else
+#             puts "O número #{num} é menor que o número correto...vamos tentar o próximo!"
+#         end
+#     end
+# end
+
+# array = [100,2,3,4,-1]
+# choise(array)
+
+
+#ex20
+def prime_numbers(num)
+    for i in 1..num
+        k = 0
+        for j in 2..i
+            if i % j == 0
+                k = k + 1
+            end
+        end
+        if k == 1
+            p i
         end
     end
 end
 
-array = [100,2,3,4,-1]
-choise(array)
-
-
+prime_numbers(20)
 
 
 

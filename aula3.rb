@@ -128,13 +128,13 @@
 # end 
 
 #ex17
-i = 1
+# i = 1
 
-until i > 20
-    puts i 
-    redo if i % 4 == 0
-    i += 1
-end 
+# until i > 20
+#     puts i 
+#     redo if i % 4 == 0
+#     i += 1
+# end 
 
 #ex18 
 # range = 1..50
