@@ -1,3 +1,4 @@
+require 'benchmark'
 #ex1
 # def soma(num1, num2)
 #     puts num1 + num2
@@ -235,20 +236,30 @@
 
 #ex20
 def prime_numbers(num)
+    count_total = 0
+    array = []
     for i in 1..num
         k = 0
         for j in 2..i
             if i % j == 0
                 k = k + 1
+                count_total += 1   
             end
         end
         if k == 1
-            p i
+            array.push(i)       
         end
     end
+    puts array
+    puts "Interações #{count_total}"
+
 end
 
-prime_numbers(20)
+time = Benchmark.realtime do
+    prime_numbers(100000)
+end
+
+puts "Tempo de execução: #{time.round(2)}"
 
 
 
